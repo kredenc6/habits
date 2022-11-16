@@ -1,0 +1,9 @@
+.taskTable--wrapper {
+  width: 13rem;
+  text-align: center;
+}
+
+.taskTable--tableCell {
+  width: 1rem;
+  height: 1rem;
+}

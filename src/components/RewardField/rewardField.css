@@ -1,0 +1,52 @@
+:root {
+  --rewardFieldTopPadding: 0.3rem ;
+  --rewardFieldLeftPadding: 1.9rem;
+}
+
+.rewardField--wrapper {
+  position: relative;
+  width: 16rem;
+  height: 4rem;
+  padding-top: var(--rewardFieldTopPadding);
+  padding-left: var(--rewardFieldLeftPadding);
+  font-size: 0.8rem;
+}
+
+.rewardField--text {
+  color: red;
+}
+
+.rewardField--text-bolded {
+  font-weight: 700;
+}
+
+.rewardField--svgBox {
+  margin-top: calc(-1 * var(--rewardFieldTopPadding));
+  margin-left: calc(-1 * var(--rewardFieldLeftPadding));
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
+  stroke: green;
+  stroke-width: 0.7;
+  overflow: visible;
+  z-index: -1;
+}
+
+.rewardField--input {
+  --bgColor: rgb(245, 245, 245);
+  position: absolute;
+  bottom: 0.4rem;
+  width: 90%;
+  margin-left: calc(-1 * var(--rewardFieldLeftPadding) + 0.5rem);
+  padding: 0.2rem 0.5rem;
+  border-bottom: 1px solid var(--bgColor);
+  background: var(--bgColor);
+  transition: all 0.3s;
+}
+
+.rewardField--input:hover {
+  cursor: text;
+  background: #eee;
+  border-bottom: 1px solid #000;
+}
